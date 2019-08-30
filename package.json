@@ -1,0 +1,19 @@
+{
+  "name": "PolarisDEX",
+  "version": "1.0.0",
+  "description": "Polaris Decentralized Exchange",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "childprocess": "^2.0.2",
+    "express": "^4.16.3"
+  }
+}
