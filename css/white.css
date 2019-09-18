@@ -13,9 +13,11 @@ body {
 }
 
 .navbar.navbar-default {
-  background: #22a3ff;
+  /* also change its inlibe background color in html file  */
+  background: #fff; 
   border: 0;
   border-radius: 0;
+  border-bottom: 1px solid #aea2a2;
 }
 a.navbar-brand {
   height: 50px;
@@ -25,7 +27,9 @@ a.navbar-brand {
   height: 100%;
 }
 .navbar-default .navbar-nav>li>a{
-  color: snow;
+  color: #aea2a2;
+  font-weight: bold;
+  letter-spacing: .5px;
 }
 .container {
   margin: 0;

@@ -1,3 +1,4 @@
+<!-- HTML DOCUMENT -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,8 +24,66 @@
     <meta name="twitter:widgets:autoload" content="off">
   </head>
 
-  <body >
-    <nav class="navbar navbar-default navbar-fixed-top">
+  <body>
+    
+    <style>
+      
+      a.navbar-brand {
+        width: 30px !important;
+        height: 30px;
+        display: block;
+        overflow: hidden;
+        margin: 10px 0 0 0;
+      }
+      .side-menu {
+        position: fixed;
+        top: 0;
+        left: 6.5%;
+        height: auto;
+        width: 100vw;
+        z-index: 9999;
+      }
+      .side-menu ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        display: inline-block;
+      }
+      .side-menu ul li {
+        list-style-type: none;
+        margin: 15px 30px;
+        display: inline-block;
+        
+      }
+      .side-menu ul li a{
+        color: #aea2a2;
+        font-weight: bold;
+        letter-spacing: .5px;
+        text-decoration: none;
+      }
+      .side-menu ul li:hover{
+        cursor: pointer;
+      }
+
+    </style>
+    
+    <div class="side-menu" id="listMenu" style="display:block">
+      <ul>
+        <li>
+          <a href="https://listingapp-1e206.firebaseapp.com/landing/listing" target="_blank">List</a>
+        </li>
+        <li>
+          <a href="https://listingapp-1e206.firebaseapp.com/landing/listing" target="_blank">Transactions</a>
+        </li>
+        <li>
+          <a href="https://listingapp-1e206.firebaseapp.com/landing/listing" target="_blank">Tutorial</a>
+        </li>
+        <li>
+          <a href="https://listingapp-1e206.firebaseapp.com/landing/listing" target="_blank">About</a>
+        </li>
+      </ul>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-top" id="pre-bar" style="top:0; background: #fff">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -34,7 +93,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand" href="/" style="color: #aea2a2">
             <img src="/images/title.png" alt="I know it's not a fork, it's a trident." />
           </a>
         </div>
@@ -46,11 +105,12 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
           
-          	<li style="display: none;" class="dropdown" id="helpDropdown"></li>
+            <li style="display: none;" class="dropdown" id="helpDropdown"></li>
             <li class="dropdown" id="tokenGuidesDropdown"></li>
             <li class="dropdown" id="connection"></li>
             <li class="dropdown" id="languages"></li>
             <li class="dropdown" id="accounts"></li>
+            <!-- <li class="dropdown" id="dropDown" style="color: white; font-size: 20px; padding: 11px; cursor:pointer" onclick="toggleMenu()">	&#9776;</li> -->
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -258,6 +318,15 @@
       })
     </script>
 
+    <script>
+      function toggleMenu(){
+          if(document.querySelector('#listMenu').style.display === 'none'){
+            document.querySelector('#listMenu').style.display = "block";
+          } else {
+            document.querySelector('#listMenu').style.display = "none";
+          }
+      }
+    </script>
     
     <!-- <script>
 
